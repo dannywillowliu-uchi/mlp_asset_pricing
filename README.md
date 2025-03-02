@@ -3,9 +3,7 @@ Asset pricing model using multilayer perceptron model
 initially trained on chaotic time-series data and retrained on financial data
 
 Contributors: 
-Danny Liu
-Aeres Zhou
-Baddis Labbedi
+Danny Liu, Aeres Zhou, Baddis Labbedi
 
 Idea: Our idea is to train a multi-layer perceptron (MLP) to predict chaotic systems and retrain it specifically on financial market data of some liquid asset. By first training the model on general chaotic systems, we hope that the model will be able to better generalize its behavior and predictions compared to training it purely on the historical financial data of some security. The chaotic systems the model is trained on can either be self-generated (Lorenz systems, Henón maps, Mackey-Glass equations, etc.) or natural (weather patterns, animal populations, biological systems, etc.). Our choice of using MLPs comes from chaotic systems research by our group member Badis Labbedi. When the predicted future price of the instrument exceeds a set deviation from the actual current value, we will trade against the direction of deviation and exit the position when the price falls back within our bounds. We will track the delta between the initial price and the final price among consistent time intervals (which will stay constant between training and testing).
 
